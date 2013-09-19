@@ -379,8 +379,8 @@ create_local_db()
     inst_array[index]="install_pkg $SRC_DIR/robots hrp2-10 ${PRIVATE_URI}"
     let "index= $index + 1"
 
-    # inst_array[index]="install_pkg $SRC_DIR/robots hrp2-10-optimized ${PRIVATE_URI}"
-    # let "index= $index + 1"
+    inst_array[index]="install_pkg $SRC_DIR/robots hrp2-10-optimized ${PRIVATE_URI} topic/eigen"
+    let "index= $index + 1"
   fi
 
   inst_array[index]="install_pkg $SRC_DIR/jrl jrl-walkgen ${JRL_URI} topic/eigen"
